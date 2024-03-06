@@ -1,0 +1,41 @@
+.snow-blocks{
+    background-color: #fabcf5;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.snow1{
+    background-image: url(../img/heart1.png);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation: snow1 18s linear infinite;
+}
+.snow2{
+    background-image: url(../img/heart2.png);
+    animation: snow2 10s linear infinite;
+    width: 100%;
+    height:100vh;
+    position:absolute;
+}
+@keyframes snow2{
+    0%{background-position: 0 0, 0 0;}
+    100%{background-position: 10% 600px, 10% 600px;}
+}
+@keyframes snow1{
+    from{background-position: 0 -300px;}
+    20% {background-position: 20% -100px;}
+    40% {background-position: 30% 100px;}
+    to{background-position: 20% 700px;}
+}
+.result{
+    position: absolute;
+    left: 270px;
+    top: 65px;
+    color: pink;
+    padding: 5px;
+    background-color: #282c34;
+    border: 3px solid blue;
+}
